@@ -29,37 +29,53 @@
     </nav>
     <main>
         <section class="page-nav">
-            <ul class="page-nav-buttons">
-                <li><a href="#"><span class="fa-solid fa-book-open"></span> Overview</a></li>
-                <li><a href="#"><span class="fa-solid fa-book-bookmark"></span> Repositories</a></li>
-                <li><a href="#"><span class="fa-regular fa-file-lines"></span> Projects</a></li>
-                <li><a href="#"><span class="fa-solid fa-cube"></span> Packages</a></li>
-                <li><a href="#"><span class="fa-regular fa-star"></span> Stars</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="sidebar-spot"></div>
+                <ul class="page-nav-buttons">
+                    <li><a href="#"><span class="fa-solid fa-book-open"></span> Overview</a></li>
+                    <li><a href="#"><span class="fa-solid fa-book-bookmark"></span> Repositories</a></li>
+                    <li><a href="#"><span class="fa-regular fa-file-lines"></span> Projects</a></li>
+                    <li><a href="#"><span class="fa-solid fa-cube"></span> Packages</a></li>
+                    <li><a href="#"><span class="fa-regular fa-star"></span> Stars</a></li>
+                </ul>
+            </div>
         </section>
         <section class="main-container">
             <aside class="sidebar">
                 <img class="profile-picture" src="../github-recreation/assets/images/profile-pic.jpg" alt="Profile picture">
                 <h2>Matthew Woodington</h2>
-                <h4>matthew-woodington</h3>
-                <p>Joined 24 days ago</p>
+                <h4>matthew-woodington</h4>
+                <button class="edit-profile">Edit profile</button>
+                <p><span class="fa-solid fa-rocket"></span> Joined 24 days ago</p>
+                <h5>Organizations</h5>
                 <div class="organizations">
-                    <h5>Organizations</h5>
-                    <a href="#"><img src="" alt=""></a>
+                    <a href="#"><img src="../github-recreation/assets/images/css-summer-profile-pic.png" alt=""></a>
                 </div>
             </aside>
             <section class="main-projects">
-                <div class="search-bar">
-                    <input type="text" placeholder="Find a repository...">
-                    <button>Type <span class="fa-solid fa-caret-down"></span></button>
-                    <button>Language <span class="fa-solid fa-caret-down"></span></button>
-                    <button>Sort <span class="fa-solid fa-caret-down"></span></button>
-                    <button><span class="fa-solid fa-book-bookmark"></span> New</button>
+                <div class="row search-bar">
+                    <input class="col-6" type="text" placeholder="Find a repository...">
+                    <div class="col-4 sort-buttons">
+                        <button>Type <span class="fa-solid fa-caret-down"></span></button>
+                        <button>Language <span class="fa-solid fa-caret-down"></span></button>
+                        <button>Sort <span class="fa-solid fa-caret-down"></span></button>
+                    </div>
+                    <button class="col-1 new-button"><span class="fa-solid fa-book-bookmark"></span> New</button>
                 </div>
-                <ul class="repository-list">
-                    <li>
+                <ul class="row repository-list">
+                    <li class="col-12">
                         <div class="title-and-info">
-                            <h3><a href="#">github-recreation</a></h3><span>Public</span>
+                            <h3><a href="#">github-recreation</a><span>Public</span></h3>
+                            <span>HTML</span><span>Updated 10 minutes ago</span>
+                        </div>
+                        <div class="buttons">
+                            <button><span class="fa-regular fa-star"></span> Star</button>
+                            <Button><span class="fa-solid fa-caret-down"></span></Button>
+                        </div>
+                    </li>
+                    <li class="col-12">
+                        <div class="title-and-info">
+                            <h3><a href="#">github-recreation</a><span>Public</span></h3>
                             <span>HTML</span><span>Updated 10 minutes ago</span>
                         </div>
                         <div class="buttons">

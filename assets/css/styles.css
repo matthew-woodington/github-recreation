@@ -37,9 +37,10 @@ a {
 
 .top-search-bar {
     color: #fff;
+    font-size: 14px;
     background-color: #0E1116;
     border: 1px solid #31363C;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
     margin-right: 10px;
 }
@@ -92,11 +93,23 @@ a {
     top: 0;
     border-bottom: 1px solid #31363C;
     z-index: 40;
+    background-color: #0E1116;
+}
+
+.nav-container {
+    width: 85%;
+    height: 100%;
+    display: flex;
+}
+
+.sidebar-spot {
+    width: 26.6%;
 }
 
 .page-nav-buttons {
+    width: 73.5%;
     display: flex;
-    justify-content: center;
+    padding: 0;
     align-items: center;
     margin: 0;
     height: 50px;
@@ -132,30 +145,135 @@ a {
     position: relative;
 }
 
-.main-projects {
-    width: 70%;
-}
-
 /* -- main -- */
 
 /* -- sidebar -- */
 
 .sidebar {
-    width: 30%;
+    width: 340px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    padding: 20px;
+    position: relative;
 }
 
 .sidebar .profile-picture {
     height: 300px;
     width: 300px;
-    border: 1px solid #31363C;
+    border: 2px solid #31363C;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
     z-index: 50;
+
+    position: absolute;
+    top: -5%;
+}
+
+.sidebar > h2 {
+    margin-top: 270px;
+    color: #CAD1D8;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.sidebar > h4 {
+    font-size: 20px;
+    color: #CAD1D8;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.sidebar .edit-profile {
+    display: block;
+    align-self: center;
+    width: 100%;
+    padding: 5px 0;
+    border: 1px solid #373B41;
+    border-radius: 5px;
+    background-color: #22262C;
+    color: #CAD1D8;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.sidebar .edit-profile:hover {
+    border: 1px solid #CAD1D8;
+    background-color: #494e56;
+}
+
+.sidebar > p {
+    font-size: 15px;
+    color: #CAD1D8;
+    width: 100%;
+    border-bottom: 1px solid #373B41;
+    padding-bottom: 15px;
+}
+
+.sidebar > h5 {
+    font-size: 15px;
+    color: #CAD1D8;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.organizations {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.organizations > a > img {
+    height: 32px;
+    width: 32px;
+    border-radius: 5px;
 }
 
 /* -- sidebar -- */
+
+/* -- main projects -- */
+
+.main-projects {
+    flex-grow: 1;
+}
+
+.main-projects .search-bar {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #373B41;
+}
+
+.search-bar > input {
+    background-color: #0E1116;
+    border: 1px solid #373B41;
+    border-radius: 5px;
+    color: #CAD1D8;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    border: 1px solid #373B41;
+    border-radius: 5px;
+    background-color: #22262C;
+    color: #CAD1D8;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.search-bar button:hover {
+    border: 1px solid #CAD1D8;
+    background-color: #494e56;
+}
+
+.search-bar .new-button {
+    margin-left: auto;
+    width: 100px;
+}
+
+/* -- main projects -- */

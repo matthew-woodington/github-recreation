@@ -1,0 +1,161 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #0E1116;
+    min-height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -- nav bar -- */
+
+.nav-bar {
+    width: 100%;
+    height: 65px;
+    background-color: #171B21;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: 0;
+    padding: 0 30px 0 30px;
+}
+
+.top-search-bar {
+    color: #fff;
+    background-color: #0E1116;
+    border: 1px solid #31363C;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.nav-bar > ul > li > a {
+    color: #F1F6FB;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-bar .logo {
+    font-size: 35px;
+    color: #F1F6FB;
+    margin-right: 20px;
+}
+
+.nav-links {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+}
+
+.nav-links > li {
+    padding: 10px;
+}
+
+.profile-links > li {
+    padding: 10px;
+}
+
+.profile-links {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+}
+
+/* -- nav bar -- */
+
+/* -- page-nav -- */
+
+.page-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #31363C;
+    z-index: 40;
+}
+
+.page-nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 50px;
+}
+
+.page-nav-buttons > li {
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.page-nav-buttons > li > a:hover {
+    background-color: #31363C;
+}
+
+.page-nav-buttons > li > a {
+    display: block;
+    height: 100%;
+    color: #F1F6FB;
+    font-size: 14px;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* -- page-nav -- */
+
+/* -- main -- */
+
+.main-container {
+    width: 85%;
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+
+.main-projects {
+    width: 70%;
+}
+
+/* -- main -- */
+
+/* -- sidebar -- */
+
+.sidebar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar .profile-picture {
+    height: 300px;
+    width: 300px;
+    border: 1px solid #31363C;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    z-index: 50;
+}
+
+/* -- sidebar -- */

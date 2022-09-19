@@ -195,7 +195,7 @@ a {
     border-radius: 5px;
     background-color: #22262C;
     color: #CAD1D8;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
     margin: 15px 0;
 }
@@ -238,12 +238,16 @@ a {
 
 .main-projects {
     flex-grow: 1;
+    padding: 0 10px;
 }
 
 .main-projects .search-bar {
-    margin: 10px 0;
-    padding: 10px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #373B41;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .search-bar > input {
@@ -253,15 +257,17 @@ a {
     color: #CAD1D8;
     font-size: 14px;
     padding: 8px;
+    flex-grow: 8;
 }
 
 .search-bar button {
+    display: inline-block;
     padding: 8px 15px;
     border: 1px solid #373B41;
     border-radius: 5px;
     background-color: #22262C;
     color: #CAD1D8;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
     text-align: center;
 }
@@ -272,8 +278,138 @@ a {
 }
 
 .search-bar .new-button {
-    margin-left: auto;
-    width: 100px;
+    flex-grow: 1;
+    border: none;
+    background-color: #438440;
+}
+
+.search-bar .new-button:hover {
+    border: none;
+    background-color: #54ab4f;
+}
+
+.search-bar .sort-buttons {
+    flex-grow: 2;
+    text-align: center;
+}
+
+.repository-list {
+    padding: 0 10px;
+}
+
+.repository-list > li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #373B41;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-and-info {
+    padding: 20px 0;
+}
+
+.title-and-info > h3 {
+    font-size: 20px;
+}
+
+.title-and-info > h3 > a {
+    color: #69A0F3;
+}
+
+.title-and-info > h3 > a:hover {
+    text-decoration: underline;
+}
+
+.title-and-info > h3 > span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #CAD1D8;
+    margin: 20px;
+    padding: 2px 8px;
+    border: 1px solid #373B41;
+    border-radius: 10px;
+}
+
+.title-and-info .code-type, .title-and-info .updated {
+    font-size: 12px;
+    color: #CAD1D8;
+    margin-right: 20px;
+}
+
+.title-and-info .code-color {
+    color: #D25735;
+    margin-right: 5px;
+
+}
+
+.repository-list .buttons > button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #373B41;
+    background-color: #22262C;
+    color: #CAD1D8;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+}
+
+.buttons .star {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.buttons .drop-down {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 /* -- main projects -- */
+
+/* -- footer -- */
+
+footer {
+    position: relative;
+    width: 85%;
+    margin: 20px auto 40px auto;
+    padding-top: 20px;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid #373B41;
+
+}
+
+footer .closing-logo {
+    display: block;
+    font-size: 12px;
+    color: #373B41;
+}
+
+.footer-links {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links > li {
+    margin: 20px;
+}
+
+.footer-links > li > a {
+    font-size: 12px;
+}
+
+.footer-links > li > a {
+    color: #69A0F3;
+}
+
+.footer-links > li > a:hover {
+    text-decoration: underline;
+}
+
+/* -- footer -- */

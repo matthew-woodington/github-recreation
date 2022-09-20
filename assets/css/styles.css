@@ -168,6 +168,7 @@ a {
     width: 340px;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 20px;
@@ -252,7 +253,7 @@ a {
 /* -- main projects -- */
 
 .main-projects {
-    flex-grow: 1;
+    width: 70%;
     padding: 0 10px;
 }
 

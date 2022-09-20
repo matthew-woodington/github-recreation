@@ -42,9 +42,13 @@
         </section>
         <section class="main-container">
             <aside class="sidebar">
-                <img class="profile-picture" src="../github-recreation/assets/images/profile-pic.jpg" alt="Profile picture">
-                <h2>Matthew Woodington</h2>
-                <h4>matthew-woodington</h4>
+
+                <script id="user-sidebar-template" type="text/x-handlebars-template">
+                    <img class="profile-picture" src="../github-recreation/assets/images/profile-pic.jpg" alt="Profile picture">
+                    <h2>Matthew Woodington</h2>
+                    <h4>matthew-woodington</h4>
+                </script>
+
                 <button class="edit-profile">Edit profile</button>
                 <p><span class="fa-solid fa-rocket"></span> Joined 24 days ago</p>
                 <h5>Organizations</h5>
@@ -105,6 +109,9 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="/assets/js/user.js"></script>
+    <script src="/assets/js/orgs.js"></script>
+    <script src="/assets/js/repo.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
 </html>

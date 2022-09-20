@@ -2,6 +2,12 @@ import { userData } from "./user.js";
 import { orgsData } from "./orgs.js";
 import { repoData } from "./repo.js";
 
+/// repo number ///
+const sourceNum = document.querySelector("#repo-num-template").innerHTML;
+const templateNum = Handlebars.compile(sourceNum);
+const htmlNum = templateNum(userData);
+document.querySelector(".repo-page").insertAdjacentHTML("beforeend", htmlNum);
+
 /// user ///
 const sourceUser = document.querySelector("#user-sidebar-template").innerHTML;
 const templateUser = Handlebars.compile(sourceUser);
@@ -23,18 +29,9 @@ const repos = {
 const htmlRepo = templateRepo(repos);
 document.querySelector(".repository-list").insertAdjacentHTML("afterbegin", htmlRepo);
 
-/// change color ///
-// const codeType = document.querySelector(".code-type");
-// const codeColor = document.querySelector("code-color");
+const codeType = document.querySelector(".code-type");
+const codeColor = document.querySelector(".code-color");
 
-// function changeLanguageColor() {
-//   if ((codeType.innerHTML = "HTML")) {
-//     codeColor.style.color = "#D25735";
-//   } else if ((codeType.innerHTML = "JavaScript")) {
-//     codeColor.style.color = "#EEE170";
-//   } else if ((codeType.innerHTML = "CSS")) {
-//     codeColor.style.color = "#523E78";
-//   }
-// }
+function changeLanguageColor() {}
 
-// changeLanguageColor();
+changeLanguageColor();

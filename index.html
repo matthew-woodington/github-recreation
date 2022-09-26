@@ -8,9 +8,9 @@
 
     <script src="https://kit.fontawesome.com/66e79a73bd.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/git-colors.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/git-colors.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
     <nav class="nav-bar">
@@ -90,11 +90,13 @@
     </script>
 
     <script id="organizations-template" type="text/x-handlebars-template">
-        <a href="{{url}}"><img src="{{avatar_url}}" alt=""></a>
+        {{#each orgs}}
+            <a href="{{url}}"><img src="{{avatar_url}}" alt=""></a>
+        {{/each}}
     </script>
 
     <script id="repo-list-template" type="text/x-handlebars-template">
-        {{#each repoData}}   
+        {{#each repos}}   
             <li class="col-12">
                 <div class="title-and-info">
                     <h3><a href="{{html_url}}">{{name}}</a><span>Public</span></h3>

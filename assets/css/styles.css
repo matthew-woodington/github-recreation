@@ -162,6 +162,7 @@ a {
     padding: 1px 10px;
     background-color: #4c525c;
     color: #CAD1D8;
+    font-size: 12px;
     border-radius: 30px;
 }
 
@@ -177,6 +178,7 @@ a {
     width: 85%;
     display: flex;
     margin: auto;
+    margin-bottom: 50px;
     position: relative;
 }
 
@@ -218,7 +220,7 @@ a {
     z-index: 60;
     position: absolute;
     height: 40px;
-    top: 16%;
+    top: 15%;
     left: 80%;
     display: flex;
     white-space: nowrap;
@@ -241,7 +243,6 @@ a {
 
 
 .status {
-    /* display: none; */
     display: none;
     font-size: 12px;
     margin-left: 8px;
@@ -256,7 +257,7 @@ a {
 
 .sidebar > h4 {
     font-size: 20px;
-    color: #CAD1D8;
+    color: #8D949D;
     font-weight: 300;
     margin-top: 0;
 }
@@ -333,6 +334,7 @@ a {
     font-size: 14px;
     padding: 6px 10px;
     flex-grow: 8;
+    margin-right: 5px;
 }
 
 .search-bar > input:focus {
@@ -370,6 +372,7 @@ a {
 
 .search-bar .sort-buttons {
     flex-grow: 2;
+    margin-right: 5px;
     text-align: center;
 }
 
@@ -405,8 +408,8 @@ a {
 .title-and-info > h3 > span {
     font-size: 12px;
     font-weight: 400;
-    color: #CAD1D8;
-    margin: 20px;
+    color: #8D949D;
+    margin: 15px;
     padding: 2px 8px;
     border: 1px solid #31363C;
     border-radius: 10px;
@@ -414,7 +417,7 @@ a {
 
 .title-and-info .code-type, .title-and-info .updated {
     font-size: 12px;
-    color: #CAD1D8;
+    color: #8D949D;
     margin-right: 20px;
 }
 
@@ -461,6 +464,7 @@ footer {
     width: 85%;
     margin: 20px auto 40px auto;
     padding-top: 20px;
+    padding-bottom: 40px;
     bottom: 0;
     display: flex;
     justify-content: flex-start;

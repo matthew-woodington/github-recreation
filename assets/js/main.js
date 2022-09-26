@@ -1,5 +1,3 @@
-import { GITHUB_TOKEN } from "./token.js";
-
 function generateUser(data) {
   const source = document.querySelector("#user-sidebar-template").innerHTML;
   const template = Handlebars.compile(source);
